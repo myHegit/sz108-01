@@ -27,6 +27,7 @@ public class ItemsController {
         List<Items> list = itemsService.findAll();
         //塞给页面
         model.addAttribute("items",list);
+		System.out.println("我是老大...");
         return "items";
     }
 
